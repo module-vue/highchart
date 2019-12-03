@@ -1,0 +1,319 @@
+﻿/*public class*/
+.mt30 {
+    margin-top: 30px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pb20 {
+    padding-bottom: 20px;
+}
+.p20 {
+    padding: 20px;
+}
+.hide ,.ng-cloak {
+    display: none;
+}
+.show {
+    display: block;
+}
+.text-left {
+    text-align: left!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.text-right {
+    text-align: right!important;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.wbwb {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.clearfix {
+    *zoom: 1;
+    &:after {
+        height: 0;
+        content: " ";
+        clear: both;
+        display: block;
+    }
+    
+}
+
+.layout {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    @extend .text-left;
+    @extend .clearfix;
+}
+
+.el-button--info {
+    background: #d5d5d5;
+    border: 1px solid #d5d5d5;
+}
+
+.el-button--primary {
+    background: #20adff;
+    border: 1px solid #20adff;   
+}
+
+.el-button--mini {
+    padding: 9px 15px;
+    min-width: 80px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.el-form-item__label {
+    color: #57606F;
+}
+
+.el-message {
+    padding-left: 44px;
+
+    .el-message__icon {
+        position: absolute;
+        top: 16px;
+        left: 20px;
+    }
+}
+
+.el-input__inner {
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+
+    &::-webkit-input-placeholder{
+        color:#9b9b9b;
+    }
+    &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+        color:#9b9b9b;
+    }
+    &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+        color:#9b9b9b;
+    }
+    &:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+        color:#9b9b9b;
+    }
+}
+
+.el-textarea__inner {
+    &::-webkit-input-placeholder{
+        color:#9b9b9b;
+    }
+    &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+        color:#9b9b9b;
+    }
+    &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+        color:#9b9b9b;
+    }
+    &:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+        color:#9b9b9b;
+    }
+}
+
+.el-button.is-plain:focus, .el-button.is-plain:hover {
+    background: #fff;
+    border-color: #20adff;
+    color: #20adff;
+}
+
+.el-input--mini .el-input__inner {
+    height: 34px;
+    line-height: 34px;
+}
+
+.el-range-editor--mini.el-input__inner {
+    height: 34px;
+    line-height: 34px;
+}
+
+.el-range-editor--mini .el-range__close-icon, .el-range-editor--mini .el-range__icon {
+    line-height: 26px;
+}
+.el-range-editor--mini .el-range-separator {
+    line-height: 26px;
+    color:#57606F;
+}
+
+.el-table--border, .el-table--group {
+    border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+.el-table--border th.gutter:last-of-type {
+    border-bottom: 1px solid #e5e5e5;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before {
+    background-color: #e5e5e5;
+}
+.el-table__fixed-right:before, .el-table__fixed:before {
+    background-color: #e5e5e5;
+}
+
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+    border-right: 1px solid #e5e5e5;
+}
+
+.el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td, .el-table__body tr.current-row>td, .el-table__body tr.hover-row.current-row>td, .el-table__body tr.hover-row.el-table__row--striped.current-row>td, .el-table__body tr.hover-row.el-table__row--striped>td, .el-table__body tr.hover-row>td {
+    background: #E7F6FF;
+}
+
+.el-tabs__active-bar {
+    height: 3px;
+    background-color: #20adff;
+}
+.el-tabs__nav-wrap:after {
+    background-color: #e5e5e5;
+}
+.el-tabs__item {
+    font-size: 16px;
+    color: #4f4f4f;
+}
+.el-tabs__item.is-active {
+    color: #20adff;
+}
+
+.el-dialog__title{
+    color: #2F3542;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ql-toolbar.ql-snow {
+    border: 1px solid #e5e5e5;
+}
+.ql-container.ql-snow {
+    border: 1px solid #e5e5e5;
+}
+
+// 富文本
+.wangEditor-txt ul li {
+    list-style-type: square;
+}
+.wangEditor-txt ol li {
+    list-style-type: decimal;
+}
+.wangEditor-txt-view {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  padding-top: 0;
+  margin-top: 5px;
+  overflow-y: auto;
+}
+.wangEditor-txt-view p,
+.wangEditor-txt-view h1,
+.wangEditor-txt-view h2,
+.wangEditor-txt-view h3,
+.wangEditor-txt-view h4,
+.wangEditor-txt-view h5 {
+  margin: 10px 0;
+  line-height: 1.8;
+}
+.wangEditor-txt-view p *,
+.wangEditor-txt-view h1 *,
+.wangEditor-txt-view h2 *,
+.wangEditor-txt-view h3 *,
+.wangEditor-txt-view h4 *,
+.wangEditor-txt-view h5 * {
+  line-height: 1.8;
+}
+.wangEditor-txt-view ul,
+.wangEditor-txt-view ol {
+  padding-left: 20px;
+}
+.wangEditor-txt-view ul li {
+    list-style-type: square;
+}
+.wangEditor-txt-view ol li{
+    list-style-type: decimal;
+}
+.wangEditor-txt-view img {
+  cursor: pointer;
+  max-width: 100%;
+}
+.wangEditor-txt-view img.clicked {
+  box-shadow: 1px 1px 10px #999;
+}
+.wangEditor-txt-view table.clicked {
+  box-shadow: 1px 1px 10px #999;
+}
+.wangEditor-txt-view pre code {
+  line-height: 1.5;
+}
+.wangEditor-txt-view:focus {
+  outline: none;
+}
+.wangEditor-txt-view blockquote {
+  display: block;
+  border-left: 8px solid #d0e5f2;
+  padding: 5px 10px;
+  margin: 10px 0;
+  line-height: 1.4;
+  font-size: 100%;
+  background-color: #f1f1f1;
+}
+.wangEditor-txt-view table {
+  border: none;
+  border-collapse: collapse;
+}
+.wangEditor-txt-view table td,
+.wangEditor-txt-view table th {
+  border: 1px solid #999;
+  padding: 3px 5px;
+  min-width: 50px;
+  height: 20px;
+}
+.wangEditor-txt-view pre {
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin: 5px 0px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+.wangEditor-txt-view a {
+    color: #20adff;
+    text-decoration: underline;
+
+    &:hover {
+        color: #1E88F5;
+        text-decoration: underline; 
+    }
+}
+
+// 上传样式
+.file-uploads.file-uploads-html4 input, .file-uploads.file-uploads-html5 label {
+    cursor: pointer;
+}
+
+.el-main {
+    -ms-flex: 1;
+}
