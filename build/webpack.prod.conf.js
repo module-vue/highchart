@@ -6,6 +6,7 @@ var webpackBaseConfig = require('./webpack.base.conf');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var ZipWebpackPlugin = require('zip-webpack-plugin');
+var uglifyjs = require('uglifyjs-webpack-plugin');
 
 var pathsToClean = ['dist'];
 
@@ -28,12 +29,7 @@ module.exports = merge(webpackBaseConfig, {
         new webpack.DefinePlugin({
             'process.env': config.build.env
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: false,
-            compress: {
-              warnings: false
-            }
-        }),
+        new uglifyjs({}),
         new webpack.LoaderOptionsPlugin({
             minimize: true
         }),

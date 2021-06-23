@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <v-header></v-header>
-        <router-view></router-view>
+        <router-view :key="key"></router-view>
         <v-footer></v-footer>
     </div>
 </template>
@@ -19,6 +19,11 @@ export default {
     data () {
         return {
             msg: ''
+        }
+    },
+    computed:{
+        key() {
+            return this.$route.path + Math.random()
         }
     }
 }
